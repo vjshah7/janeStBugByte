@@ -112,8 +112,6 @@ def main():
     assert g.vcount() == n_vertices
     g.vs['sum-constraint'] = [17, 3, -1, -1, -1, -1, -1, 54, 49, 60, 79, 75, -1, 29, -1, 39, 25, -1]
     g.vs['path-constraint'] = [[], [], [19, 23], [], [31], [6, 9, 16], [8], [], [], [], [], [], [], [], [], [], [], []]
-    # g.vs['id'] = list(range(n_vertices))
-    # g.es['id'] = list(range(n_edges))
 
     model = cp_model.CpModel()
 
